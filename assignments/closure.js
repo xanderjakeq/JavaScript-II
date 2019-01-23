@@ -14,7 +14,7 @@ const counter = () => {
   var counter = 0;
 
   return count = () => {
-    return ++counter
+    return counter--
   }
 };
 // Example usage: const newCounter = counter();
@@ -32,10 +32,10 @@ const counterFactory = () => {
   var count = 0;
   return new Object({
     increment: () => {
-      return ++count
+      return count++
     },
     decrement: () => {
-      return --count
+      return count--
     }
   })
 };
